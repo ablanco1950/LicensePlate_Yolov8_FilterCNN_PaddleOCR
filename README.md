@@ -16,13 +16,13 @@ yolo must be installed, if not, follow the instructions indicated in: https://le
 
 pip install ultralytics
 
-Are attached, te best.pt file, that allows the license plate detect for yolo,  and FSRCNN that allows the working of the filter with de same name
+Are attached, te best.pt file, that allows the license plate detect for yolo( may be get from scratch following the steps pointed out in https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR),  and FSRCNN that allows the working of the filter with de same name
 
 As a previous step, the X_train and the Y_train that the CNN needs are created, the X_Train is the matrix of each image and the Y_train is made based on the code assigned (from 0 to 10) to the first filter with which paddleocr manages to recognize that license plate of car in the reference project https://github.com/ablanco1950/LicensePlate_Yolov8_Filters_PaddleOCR.
 
 The Crea_Xtrain_Ytrain.py program is attached (its execution is not necessary), whose result after applying it to different image files (the input file is indicated in instruction 15) of renamed image cars with their registration plate is saved in the Training folder , consisting of the image itself and a .txt file with the name of the car's license plate and containing the filter code
+assigned to that image. This Training file that is attached in .zip format, is necessary to download it, like the Test.zip file and unzip. 
 
-assigned to that image. This Training file that is attached in .zip format is necessary to download it, like the Test.zip file and unzip. 
 You may run
 
 TrainCodFilterCNN.py
